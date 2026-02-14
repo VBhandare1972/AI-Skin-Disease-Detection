@@ -1,0 +1,35 @@
+# Exclude image dataset
+SkinDisease/data/
+
+# Exclude large model files temporarily
+models/*.keras
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# TensorFlow logs (optional - uncomment if you don't want to track logs)
+# logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
