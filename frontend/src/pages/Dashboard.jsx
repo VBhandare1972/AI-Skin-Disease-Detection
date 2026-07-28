@@ -24,7 +24,8 @@ function Dashboard() {
     // Verify token with backend
     const verifyToken = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/auth/me', {
+        const apiBaseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const response = await axios.get(`${apiBaseUrl}/api/auth/me`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
